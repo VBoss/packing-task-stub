@@ -32,7 +32,7 @@ class StoredResponses
             ->getRepository(StoredResponse::class)
             ->findOneBy(
                 [
-                    'key' => $inputProducts->getKey(),
+                    'requestKey' => $inputProducts->getKey(),
                 ]
             )
         ;

@@ -20,27 +20,27 @@ class StoredResponse
     /**
      * @ORM\Column(type="string")
      */
-    private string $key;
+    private string $requestKey;
 
     /**
      * @ORM\Column(type="json")
      */
-    private $response;
+    private array $response;
 
 
     public function __construct(
-        string $key,
-        array $response,
+        string $requestKey,
+        array  $response,
     )
     {
-        $this->key = $key;
+        $this->requestKey = $requestKey;
         $this->response = $response;
     }
 
 
-    public function getKey(): string
+    public function getRequestKey(): string
     {
-        return $this->key;
+        return $this->requestKey;
     }
 
 

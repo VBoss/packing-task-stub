@@ -17,6 +17,12 @@ $inputData = [
         \App\Config\InputApi::LENGTH_KEY  => random_int(1, 3),
         \App\Config\InputApi::WEIGHT_KEY  => random_int(1, 3),
     ],
+    [
+        \App\Config\InputApi::WIDTH_KEY  => random_int(1, 3),
+        \App\Config\InputApi::HEIGHT_KEY  => random_int(1, 3),
+        \App\Config\InputApi::LENGTH_KEY  => random_int(1, 3),
+        \App\Config\InputApi::WEIGHT_KEY  => random_int(1, 3),
+    ],
 ];
 $inputData = \Nette\Utils\Json::encode($inputData);
 
