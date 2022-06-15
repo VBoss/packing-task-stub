@@ -37,8 +37,13 @@ class Packaging
      */
     private float $maxWeight;
 
-    public function __construct(float $width, float $height, float $length, float $maxWeight)
-    {
+
+    public function __construct(
+        float $width,
+        float $height,
+        float $length,
+        float $maxWeight
+    ) {
         $this->width = $width;
         $this->height = $height;
         $this->length = $length;
